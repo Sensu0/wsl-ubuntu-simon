@@ -1,4 +1,3 @@
-./install.sh
-./omzinstall.sh
-./omzplugins.sh
-mv .zshrc ~/
+./install.sh && ./omzinstall.sh &&./omzplugins.sh
+cp -r .vimrc
+cp -r .zshrc

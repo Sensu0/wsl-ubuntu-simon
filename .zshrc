@@ -34,7 +34,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # DISABLE_AUTO_UPDATE="false"
 
 # Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=2
+export UPDATE_ZSH_DAYS=5
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS=true
@@ -73,13 +73,13 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-git
 ubuntu
 colored-man-pages
 sudo
 zsh-syntax-highlighting
 zsh-autosuggestions
 jump
+emoji
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -92,11 +92,11 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=sv_SE.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+ if [[ -n $SSH_CONNECTION ]]; then
+   export EDITOR='vim'
+ else
+   export EDITOR='vi'
+ fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -110,6 +110,16 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias j="jump"
+alias cls="clear"
+function custupdate {
+for gitRepo in \
+  "$HOME/.oh-my-zsh/custom/themes/powerlevel10k" \
+  "$HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions/" \
+  "$HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/"
+do
+  git -C "$gitRepo" pull &
+done
+}
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
