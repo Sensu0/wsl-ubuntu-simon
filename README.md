@@ -1,4 +1,4 @@
-# wsl-ubuntu-simon
+# wsl2-ubuntu-simon
 Like Simon-manjaroawesome, but for wsl Ubuntu.
 
 While you can use git and vim for windows, there is limited customization for them. Running these in Windows Subsystem for Linux will also give you more tools to work with. 
