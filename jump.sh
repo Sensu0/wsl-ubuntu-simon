@@ -19,3 +19,4 @@ cd /mnt/c/Users/ && mark win-users
 cd /mnt/c/Users/$userprofile\/Documents && mark documents 
 cd /mnt/c/Users/$userprofile\/Downloads && mark downloads
 cd /mnt/c/Users/$userprofile\/Desktop && mark desktop
+cd /mnt/d/git-clones/ && mark
