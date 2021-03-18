@@ -9,7 +9,7 @@ If (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
     Exit
 }
 
-Set-Location $env:windir\System32g
+Set-Location $env:windir\System32
 
 #Will install WSL and Virtual Machine Platform.
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
