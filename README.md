@@ -37,7 +37,7 @@ Function <i>custupdate</i> will update any custom plugins and themes I use with 
 
 <i>.zshrc</i> is to be stored at <b>~/</b> (/HOME/USER) path. Same applies to <i>.vimrc</i>
 
-<b>C:\</b> and other <b>windows partitions</b> are found at <b>/mnt/</b>.
+<b>C:</b> and other <b>windows partitions</b> are found at <b>/mnt/</b>.
 
 ---
 
