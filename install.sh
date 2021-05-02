@@ -7,6 +7,6 @@ mkdir -p ~/.vim/colors
 cp -vr .vimrc ~/
 cd ~/.vim
 git clone https://github.com/sjl/badwolf.git
-cp -vr ../badwolf/colors/ ~/.vim/colors/
+cp -vr ./badwolf/colors/ ~/.vim/colors/
 git clone --depth 1 https://github.com/codota/tabnine-vim
 cd -
