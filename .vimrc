@@ -4,6 +4,9 @@ colorscheme badwolf
 " display line numbers
 set number
 
+" Enable Tabnine
+set rtp+=~/.vim/tabnine-vim
+
 " Bail out if something that ran earlier, e.g. a system wide vimrc, does not
 " want Vim to use these default values.
 if exists('skip_defaults_vim')

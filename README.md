@@ -1,4 +1,4 @@
-# wsl-ubuntu-simon
+# wsl2-ubuntu-simon
 Like Simon-manjaroawesome, but for wsl Ubuntu.
 
 While you can use git and vim for windows, there is limited customization for them. Running these in Windows Subsystem for Linux will also give you more tools to work with. 
@@ -37,7 +37,7 @@ Function <i>custupdate</i> will update any custom plugins and themes I use with 
 
 <i>.zshrc</i> is to be stored at <b>~/</b> (/HOME/USER) path. Same applies to <i>.vimrc</i>
 
-<b>C:\</b> and other <b>windows partitions</b> are found at <b>/mnt/</b>.
+<b>C:</b> and other <b>windows partitions</b> are found at <b>/mnt/</b>.
 
 ---
 

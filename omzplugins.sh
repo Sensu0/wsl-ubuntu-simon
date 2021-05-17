@@ -19,3 +19,4 @@ cd -
 cd ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 git config pull.rebase false
 cd -
+cp -r .zshrc ~/

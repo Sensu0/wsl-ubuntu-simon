@@ -111,15 +111,32 @@ alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias j="jump"
 alias cls="clear"
+
+# Git aliases
+alias gadd="git add"
+alias gpul="git pull"
+alias gpus="git push"
+alias gcom="git commit"
+alias gclo="git clone"
+alias gdif="git diff"
+alias gres="git reset"
+alias gsta="git status"
+alias girm="git rm"
+
+# Update custom plugins
 function custupdate {
 for gitRepo in \
   "$HOME/.oh-my-zsh/custom/themes/powerlevel10k" \
   "$HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions/" \
-  "$HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/"
+  "$HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/" \
+  "$HOME/.vim/badwolf" \
+  "$HOME/.vim/tabnine-vim/"
 do
   git -C "$gitRepo" pull &
+  cp -r ~/.vim/badwolf/colors/ ~/.vim/colors/
 done
 }
+
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
